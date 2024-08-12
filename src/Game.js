@@ -50,6 +50,7 @@ function Game() {
         const playerName = inputValue.trim().toLowerCase();
         const countryName = selectedCountry.toLowerCase();
         return cricketers.some(item =>
+            item.player[0]===selectedAlphabet.toLowerCase() &&
             item.player.toLowerCase() === playerName &&
             item.country.toLowerCase() === countryName
         );
